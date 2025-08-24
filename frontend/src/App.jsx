@@ -6,9 +6,13 @@ import Catalog from './pages/Catalog.jsx'
 import Product from './pages/Product.jsx'
 import Cart from './pages/Cart.jsx'
 import NotFound from './pages/NotFound.jsx'
+import Three from './components/three.jsx'
 
 export default function App() {
+  const shirt = '../3dmodels/'
+  const jeans = '../3dmodels/'
   return (
+
     <div className="app">
       <Header />
       <main>
@@ -20,6 +24,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <Three modelUrl="../3dmodels/human.glb" shirt={`${shirt}`} jeans={`${jeans}`}/>
       <Footer />
     </div>
   )
