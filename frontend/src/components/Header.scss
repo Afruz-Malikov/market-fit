@@ -1,0 +1,18 @@
+.header {
+  position: sticky;
+  top: 0; z-index: 20;
+  background: rgba(17,24,39, .6);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(148,163,184,.15);
+}
+.bar {
+  display: flex; align-items: center; gap: 18px;
+  padding: 14px 0;
+}
+.logo { display:flex; align-items:center; gap:12px; font-weight:800; font-size:18px; }
+.logo img { width: 28px; height: 28px; }
+.logo .brand { color: var(--primary); }
+.nav { display:flex; align-items:center; gap: 16px; }
+.nav a { padding: 8px 10px; border-radius: 8px; color: var(--muted); font-weight:600; }
+.nav a.active { color: var(--text); background: rgba(148,163,184,.1); }

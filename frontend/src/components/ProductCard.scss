@@ -1,0 +1,6 @@
+.product { overflow: hidden; display:flex; flex-direction:column; }
+.product .pic { position: relative; display:block; aspect-ratio: 1/1; overflow:hidden; }
+.product .pic img { width:100%; height:100%; object-fit: cover; transition: transform .3s ease; }
+.product:hover .pic img { transform: scale(1.04); }
+.product .body { padding: 12px; display:flex; flex-direction:column; gap:8px; }
+.product .title { font-weight:700; color: var(--text); }
